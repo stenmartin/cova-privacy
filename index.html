@@ -28,7 +28,7 @@
   </head>
   <body>
     <h1>Cova — Privacy Policy</h1>
-    <p class="meta">Effective date: August 15, 2026 · Contact: st3nmartin@gmail.com</p>
+    <p class="meta">Effective date: October 5, 2026 · Contact: st3nmartin@gmail.com</p>
 
     <p>
       Cova ("the app", "we") is a gym-training tracker. This policy explains what data the app handles and
@@ -53,13 +53,14 @@
     </p>
     <ul>
       <li>
-        <strong>Account (email + password).</strong> If you create an account, we store your email address
-        and an encrypted password to authenticate you. Required only for cloud backup and program sharing.
+        <strong>Account (Sign in with Google).</strong> If you sign in, Google shares your name, email
+        address and profile picture with us to authenticate you; we store them with your account. We never
+        see or store your Google password. Required only for cloud backup and program sharing.
       </li>
       <li>
-        <strong>Cloud backup (opt-in).</strong> If you turn on backup, a copy of your training data is
-        uploaded to our backend under your account so you can restore it on a new device. Only you can
-        access it.
+        <strong>Cloud backup (opt-in).</strong> While you are signed in, a copy of your training data is
+        uploaded to our backend under your account whenever it changes, so you can restore it on a new
+        device. Only you can access it.
       </li>
       <li>
         <strong>Program sharing by code (opt-in).</strong> If you publish a program, that program's contents
@@ -69,7 +70,36 @@
         chose to share.
       </li>
     </ul>
-    <p>We do <strong>not</strong> sell your data, show third-party ads, or use third-party analytics or tracking SDKs.</p>
+    <p>
+      We do <strong>not</strong> sell your data or use third-party analytics or tracking SDKs. Cova's free
+      tier may show ads in future (they are currently turned off; see <strong>Ads</strong> below) and sends crash reports to
+      <strong>Sentry</strong> so crashes can be fixed (see <strong>Who processes your data</strong>).
+    </p>
+
+    <h2>Ads</h2>
+    <p>
+      <strong>Ads are currently turned off</strong>, and the ad SDK is not started while they are. If they
+      are turned on, Cova's free tier will be supported by ads: a single banner on the Insights screen and
+      one full-screen ad shown after you finish a workout. Ads never appear during a set or on a
+      personal-best moment, and never on your History. Ads are served by <strong>Google AdMob</strong>,
+      and the rest of this section applies only while ads are on.
+    </p>
+    <ul>
+      <li>
+        To serve ads, AdMob accesses your device's <strong>advertising ID</strong> and may use it to show
+        personalized ads.
+      </li>
+      <li>
+        In the EEA, UK, and Switzerland, Cova shows a Google consent prompt on first launch; you choose
+        whether ads are personalized. Where you don't consent (or outside those regions where required), ads
+        are non-personalized.
+      </li>
+      <li>
+        <strong>Remove ads:</strong> a one-time in-app purchase removes all ads permanently on your account.
+        Purchases are processed through Google Play Billing and managed by <strong>RevenueCat</strong>, which
+        records only your purchase status — not your training data.
+      </li>
+    </ul>
 
     <h2>Notifications</h2>
     <p>
@@ -79,23 +109,61 @@
 
     <h2>Who processes your data</h2>
     <p>
-      When you use the opt-in features above, data is stored and processed by <strong>Supabase</strong> (our
-      backend and authentication provider) on our behalf. No other third parties receive your data.
+      When you use the opt-in account features above, data is stored and processed by
+      <strong>Supabase</strong> (our backend and authentication provider) on our behalf. In addition:
     </p>
+    <ul>
+      <li>
+        <strong>Google AdMob</strong> (advertising) receives your advertising ID to serve ads in the free
+        tier.
+      </li>
+      <li>
+        <strong>RevenueCat</strong> and <strong>Google Play Billing</strong> (purchase processing) handle
+        the optional "Remove ads" purchase and record your purchase status.
+      </li>
+      <li>
+        <strong>Sentry</strong> (crash diagnostics) receives a report when the app crashes or hits an
+        error: the error and where in the code it happened, the app version, and the device model and
+        Android version. Reports carry no account details, training data or advertising ID, and are
+        used only to fix bugs.
+      </li>
+    </ul>
+    <p>No other third parties receive your data.</p>
 
     <h2>Your rights and controls</h2>
     <ul>
       <li><strong>Access / export:</strong> your data is on your device; backup is a copy you control.</li>
       <li>
-        <strong>Deletion:</strong> you can delete your account and all associated cloud data from within the
-        app at any time (Profile → account). This permanently removes your account, backup, and any programs
-        you published.
+        <strong>Deletion:</strong> you can delete your account and all associated cloud data at any time,
+        in the app or by email. See <a href="#delete-account">Deleting your Cova account</a>.
       </li>
       <li><strong>Withdraw sharing:</strong> unpublish any shared program to stop its code from resolving.</li>
     </ul>
     <p>
       If you are in a jurisdiction with data-protection rights (e.g. GDPR/UK GDPR), the deletion control
       above satisfies your right to erasure; contact us at st3nmartin@gmail.com for any other request.
+    </p>
+
+    <h2 id="delete-account">Deleting your Cova account</h2>
+    <p>You can delete your Cova account and its cloud data in either of two ways:</p>
+    <ul>
+      <li>
+        <strong>In the app:</strong> open <strong>Profile → Cloud backup → Delete account</strong> and confirm.
+        Deletion happens immediately.
+      </li>
+      <li>
+        <strong>Without the app:</strong> email <a href="mailto:st3nmartin@gmail.com">st3nmartin@gmail.com</a>
+        from the Google address you signed in with, with the subject "Delete my Cova account". We delete the
+        account within 30 days and reply to confirm.
+      </li>
+    </ul>
+    <p>
+      <strong>What is deleted:</strong> your account (name, email address, profile picture), your cloud
+      backup, and any programs you published by code. Nothing is kept after deletion.
+    </p>
+    <p>
+      <strong>What is not affected:</strong> training data stored on your phone stays there until you
+      uninstall the app. Crash reports never contained account details, so there is nothing in them to delete.
     </p>
 
     <h2>Children</h2>
